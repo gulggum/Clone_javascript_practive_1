@@ -1,0 +1,221 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: gainsboro;
+  font-size: 0.875rem;
+}
+
+#container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+header h1 {
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+section:last-child {
+  border-radius: 10px;
+  background-color: white;
+}
+
+.tab_line {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.tab_line .tab_btn {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 20px;
+  letter-spacing: 5px;
+  background-color: grey;
+  border: none;
+}
+.tab_line .tab_btn:first-child {
+  border-top-left-radius: 10px;
+}
+.tab_line .tab_btn:last-child {
+  border-top-right-radius: 10px;
+}
+.tab_line .tab_btn:hover:not(.active) {
+  background-color: rgb(206, 208, 241);
+  cursor: pointer;
+}
+.tab_line .tab_btn.active {
+  background-color: white;
+}
+
+.describe {
+  display: none;
+  padding: 20px;
+  line-height: 30px;
+}
+.describe h4 {
+  font-weight: 600;
+}
+
+.describe.active {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90vw;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main .img_section {
+    margin-bottom: 20px;
+  }
+  main .dec_section {
+    height: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

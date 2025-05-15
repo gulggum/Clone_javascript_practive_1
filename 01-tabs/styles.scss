@@ -1,0 +1,97 @@
+//css reset
+@import "./style/base.scss";
+
+body {
+  background-color: gainsboro;
+  font-size: 0.875rem;
+}
+
+#container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+//tab박스
+section:last-child {
+  border-radius: 10px;
+  background-color: white;
+}
+
+//tab라인
+.tab_line {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .tab_btn {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 20px;
+    letter-spacing: 5px;
+    background-color: grey;
+    border: none;
+    &:first-child {
+      border-top-left-radius: 10px;
+    }
+    &:last-child {
+      border-top-right-radius: 10px;
+    }
+    &:hover:not(.active) {
+      background-color: rgb(206, 208, 241);
+      cursor: pointer;
+    }
+    &.active {
+      background-color: white;
+    }
+  }
+}
+
+//des
+.describe {
+  display: none;
+  padding: 20px;
+  line-height: 30px;
+  h4 {
+    font-weight: 600;
+  }
+}
+
+.describe.active {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90vw;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    .img_section {
+      margin-bottom: 20px;
+    }
+    .dec_section {
+      height: auto;
+    }
+  }
+}

@@ -4,9 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
+    <div id="container">
+      <header>
+        <h1>About</h1>
+      </header>
+      <main>
+        <section class="img_section">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/05/18/21/54/london-bridge-2324875_640.jpg"
+            alt="image"
+          />
+        </section>
+        <section class="dec_section">
+          <div class="tab_line">
+            <button class="tab_btn active" data-id="history">History</button>
+            <button class="tab_btn" data-id="vidion">Vision</button>
+            <button class="tab_btn" data-id="history">Goals</button>
+          </div>
+          <div class="describe active" id="history">
+            <h4>History</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              modi accusamus expedita dignissimos excepturi recusandae
+              voluptatum, magni veniam sapiente distinctio, in optio laborum
+              ipsa vitae inventore numquam earum praesentium consectetur?
+            </p>
+          </div>
+          <div class="describe" id="vision">
+            <h4>Vision</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              modi accusamus expedita dignissimos excepturi recusandae
+              voluptatum, magni veniam sapiente distinctio, in optio laborum
+              ipsa vitae inventore numquam earum praesentium consectetur?
+            </p>
+          </div>
+          <div class="describe" id="goals">
+            <h4>Goals</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              modi accusamus expedita dignissimos excepturi recusandae
+              voluptatum, magni veniam sapiente distinctio, in optio laborum
+              ipsa vitae inventore numquam earum praesentium consectetur?
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
